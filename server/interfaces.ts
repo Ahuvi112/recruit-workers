@@ -1,5 +1,4 @@
-import mongoose, { Document } from "mongoose";
-
+import IJob from ''
 export interface IJob extends Document {
     name: string,
     location?: string,

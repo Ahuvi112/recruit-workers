@@ -1,7 +1,8 @@
 
 import mongoose from 'mongoose';
-import { ObjectId } from "mongodb";
 import { IJob } from '../interfaces';
+//import { ObjectId } from "mongodb";
+//import { IJob } from '../interfaces';
 
 const jobModel = new mongoose.Schema<IJob>({
 
