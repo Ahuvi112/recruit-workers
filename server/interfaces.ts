@@ -1,10 +1,18 @@
-import IJob from ''
-export interface IJob extends Document {
-    name: string,
-    location?: string,
-    companyDescription?: string,
-    jobDescription: string,
+export interface IJob {
+    id?: Number,
+    name: String,
+    location?: String,
+    companyDescription?: String,
+    jobDescription: String,
     requierments: Array<String>,
-    status: boolean,
+    status: String,
     date: Date,
+}
+export interface ICandidate {
+    name: String,
+    email: String,
+    cognitiveScore?: Number,
+    personalityFit?: Number,
+    rating: Number,
+    jobId: String
 }

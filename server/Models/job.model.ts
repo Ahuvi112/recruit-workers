@@ -5,7 +5,6 @@ import { IJob } from '../interfaces';
 //import { IJob } from '../interfaces';
 
 const jobModel = new mongoose.Schema<IJob>({
-
     name: {
         type: String,
         require: true
@@ -27,7 +26,7 @@ const jobModel = new mongoose.Schema<IJob>({
         require: true
     },
     status: {
-        type: Boolean,
+        type: String,
         require: true
     },
     date: {
